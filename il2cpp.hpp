@@ -11,7 +11,7 @@
 
 namespace IL2CPP {
 	static void Init() {
-		auto assembly = LoadLibraryA("GameAssembly.dll");
+		auto assembly = GetModuleHandleA("GameAssembly.dll");
 
 		if (!assembly) {
 			return;
